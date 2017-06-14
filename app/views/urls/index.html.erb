@@ -1,0 +1,27 @@
+<h1>Urls#index</h1>
+<p>Find me in app/views/urls/index.html.erb</p>
+
+<%= link_to "Shorten Form", new_url_path %>
+
+<br>
+<br>
+<br>
+
+<table>
+<tr>
+<th>Original URL</th>
+<th>Shortened URL</th>
+</tr>
+
+
+
+
+
+<%  @urls.each do |url| %>
+    <tr>
+    <td> <%= link_to url.long_url, url_path(url) %></td>
+    <td> <%=url.short_url%> </td>
+    <td> <%= link_to 'Delete', urls_path(url), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>   
+<% end %>
+</table>
