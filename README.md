@@ -1,21 +1,7 @@
-Url Shortener Rspec Assessment
+Url Shortener App
 ===============================
 
-
-1) Bundle install all gems
-```
-$ bundle install
-```
-
-
-2) Create database
-```
-$ bundle exec rake db:create
-$ bundle exec rake db:migrate
-```
-
-
-3) Open a new terminal and execute Guard:
-```
-$ bundle exec guard
-```
+Project looks into creating a URL shortener clone, with the following applications:
+1) Ruby on Rails to demonstrate frontend and backend
+2) AJAX for dynamic frontend
+3) Bootstrapto customise frontend
